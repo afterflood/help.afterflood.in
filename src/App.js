@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import VolunteerListing from './components/VolunteerListing';
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import { Jumbotron, Container } from 'reactstrap';
 import './App.css';
 
@@ -20,7 +21,7 @@ class App extends Component {
         </Container>
       </Jumbotron>
        <VolunteerListing></VolunteerListing> 
-      
+      <Footer/>
       </div>
     );
   }
