@@ -1,3 +1,13 @@
 .App-title {
   text-align: center;
 }
+
+.Header-banner {
+  /* background-color:#00BA91; */
+  background-color:transparent !important;
+}
+
+.display-3 {
+  color: white;
+  text-align: center;
+}
