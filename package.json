@@ -2,6 +2,7 @@
   "name": "reimagine-kerala",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://help.afterflood.in",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "bootstrap-3-card": "^0.2.0",
