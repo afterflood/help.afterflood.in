@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Card, Button, Container, CardTitle, CardText, Row, Col } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import './css/VolunteerListing.css'
+import { Link } from 'react-router-dom'
+import './css/OrganizationListing.css'
 
 const greenbgStyle = {
     background:'#00BA91'
@@ -17,11 +18,14 @@ const greenbgStyle = {
 
 
   class OrganizationListing extends Component {
+    nextPath(path) {
+      this.props.history.push(path);
+    }
     render() {
       return (
         <Container>
         <Breadcrumb >
-        <BreadcrumbItem><a style={whiteStyle} href="/">Home</a></BreadcrumbItem>
+        <BreadcrumbItem><Link style={whiteStyle} to='/'>Home</Link></BreadcrumbItem>
         <BreadcrumbItem active><a style={greenStyle} >Organizations willing to help</a></BreadcrumbItem>
       </Breadcrumb>
         <Row >
@@ -36,7 +40,7 @@ const greenbgStyle = {
           <Card className="card" body>
             <CardTitle className="Vol-title" style={greenStyle}>Free Service - Appliances Repair</CardTitle>
             <CardText className="cardtext">Information on the brands and dealerships offering free services to restore your appliances damaged in the disaster.<br/> <br/> <br/></CardText>
-            <Button href="tel:18002095511" target="_blank" className="Vol-contactbutton" style={greenbgStyle}>Visit</Button>
+             <Button onClick={() => this.nextPath('/appl-repair') } className="Vol-contactbutton" style={greenbgStyle}>Visit</Button>
           </Card>
           </Col>
         </Row>

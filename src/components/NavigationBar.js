@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import {
   Collapse,
   Navbar,
@@ -11,6 +12,10 @@ import {
 
   const greenStyle = {
     color: '#00BA91'
+  };
+
+  const blackStyle = {
+    color: '#555D75'
   };
 
 class NavigationBar extends React.Component {
@@ -31,15 +36,15 @@ class NavigationBar extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand style={greenStyle} href="/">Reimagine Kerala</NavbarBrand>
+          <NavbarBrand ><Link style={greenStyle} to='/'>Reimagine Kerala</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink  href="">Organizations willing to help</NavLink>
+                <NavLink ><Link style={blackStyle} to='/orglist'>Organizations willing to help</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink  href="">Contact Us</NavLink>
+                <NavLink  ><Link style={blackStyle} to='/'>Contact Us</Link></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
