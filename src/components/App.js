@@ -21,7 +21,7 @@ class App extends Component {
         </Container>
       </Jumbotron>
        <Main />
-      <Footer/>
+      
       </div>
     );
   }
