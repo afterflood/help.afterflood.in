@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import VolunteerListing from './components/VolunteerListing';
-import NavigationBar from './components/NavigationBar';
-import Footer from './components/Footer';
+import NavigationBar from './NavigationBar';
+import Footer from './Footer';
+import Main from './Main';
 import { Jumbotron, Container } from 'reactstrap';
 import './App.css';
 
@@ -20,7 +20,7 @@ class App extends Component {
           <h1 className="display-3">Let's REBUILD KERALA</h1>
         </Container>
       </Jumbotron>
-       <VolunteerListing></VolunteerListing> 
+       <Main />
       <Footer/>
       </div>
     );

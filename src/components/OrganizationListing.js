@@ -16,10 +16,9 @@ const greenbgStyle = {
   };
 
 
-  class VolunteerListing extends Component {
+  class OrganizationListing extends Component {
     render() {
       return (
-
         <Container>
         <Breadcrumb >
         <BreadcrumbItem><a style={whiteStyle} href="/">Home</a></BreadcrumbItem>
@@ -47,4 +46,4 @@ const greenbgStyle = {
     }
   }
   
-  export default VolunteerListing;
+  export default OrganizationListing;
