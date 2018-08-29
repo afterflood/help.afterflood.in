@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavigationBar from './NavigationBar';
-import Footer from './Footer';
+// import Footer from './Footer';
 import Main from './Main';
 import { Jumbotron, Container } from 'reactstrap';
 import './App.css';

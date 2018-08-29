@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, Container, CardTitle, CardText, Row, Col } from 'reactstrap';
+import {Container } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import PhotoGrid from "react-photo-feed";
@@ -7,9 +7,7 @@ import PhotoGrid from "react-photo-feed";
 import "react-photo-feed/library/style.css";
 
 
-const greenbgStyle = {
-    background:'#00BA91'
-  };
+
 
   const greenStyle = {
     color :'#00BA91'
