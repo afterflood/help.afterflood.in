@@ -44,7 +44,7 @@ class NavigationBar extends React.Component {
                 <NavLink ><Link style={blackStyle} to='/orglist'>Organizations willing to help</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink  ><Link style={blackStyle} to='/'>Contact Us</Link></NavLink>
+                <NavLink  ><Link style={blackStyle} to='/contact'>Contact Us</Link></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
